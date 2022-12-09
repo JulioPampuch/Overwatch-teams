@@ -15,8 +15,13 @@ header div {
 
 header div img {
   width: 120px;
+  margin-bottom: 15px;
 }
 
 header div h1, h2 {
   margin: 0;
+  font-family: 'Inter', sans-serif;
+  font-style: italic;
+  color: #FFFFFF;
+  line-height: 30px;
 }
