@@ -1,0 +1,22 @@
+header {
+  display: flex;
+
+  width: 100vw;
+  height: 40vh;
+
+  background: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/5b18d491-8738-4145-b536-ed43b9a43739/da81e9y-b878f527-a81b-47e6-b091-fdf494343bc7.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzViMThkNDkxLTg3MzgtNDE0NS1iNTM2LWVkNDNiOWE0MzczOVwvZGE4MWU5eS1iODc4ZjUyNy1hODFiLTQ3ZTYtYjA5MS1mZGY0OTQzNDNiYzcuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.dm5wk_TPooi-hrekwBY4H3iC-puUHJF9zUJvnPtFeNw")
+}
+
+header div {
+  margin: 5% auto 0 auto;
+
+  text-align: center;
+}
+
+header div img {
+  width: 120px;
+}
+
+header div h1, h2 {
+  margin: 0;
+}
