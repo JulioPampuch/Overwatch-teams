@@ -5,8 +5,8 @@ const Header = () => {
     <header>
       <div>
         <img src="/imagens/logo.png" />
-        <h1>OVERWATCH</h1>
-        <h2>TEAMS</h2>
+        <h1>Overwatch</h1>
+        <h2>Teams</h2>
       </div>
     </header>
   )
