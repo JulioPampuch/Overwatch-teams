@@ -1,10 +1,10 @@
 .sectionForm {
-  background-color: black;
+  background-color: #f7f7f7;
 }
 
 .sectionForm h3 {
   text-transform: uppercase;
   font-style: italic;
 
-  color: #FFFFFF
+  color: #212121;
 }
