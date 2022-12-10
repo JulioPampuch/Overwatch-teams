@@ -21,6 +21,7 @@ const Form = () => {
           <label for="time">Time</label>
           <select name="time" />
         </div>
+        <button type="submit">Criar card</button>
       </form>
     </section>
   )
