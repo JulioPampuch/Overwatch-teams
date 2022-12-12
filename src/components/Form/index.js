@@ -1,11 +1,15 @@
 import "./form.css"
 import { useState } from "react"
+import Teams from "../Teams"
 
 
-const Form = () => {
+const Form = (props) => {
 
   const onSubmit = (event) => {
     event.preventDefault()
+    // return (
+    //   <Teams color={value.color} />
+    // )
   }
 
   const handleChange = (event) => {
@@ -25,34 +29,6 @@ const Form = () => {
     'time': '',
   })
 
-  const times = [
-    {
-      'name': 'New York Excelsior',
-      'color': '#002aff'
-    },
-    {
-      'name': 'Atlanta Reign',
-      'color': '#540000'
-    },
-    {
-      'name': 'Hangzhou Spark',
-      'color': '#ff73e8'
-    },
-    {
-      'name': 'Los Angeles Gladiators',
-      'color': '#36002d'
-    },
-    {
-      'name': 'Los Angeles Valiant',
-      'color': '#ffe600'
-    },
-    {
-      'name': 'Vancouver Titans',
-      'color': '#058f00'
-    }
-  ]
-
-  const funcoes = ['Selecione uma função', 'Tanque', 'Dano', 'Suporte']
 
   return (
     <section className="sectionForm">
@@ -69,7 +45,7 @@ const Form = () => {
         <div>
           <label htmlFor="funcao">Função</label>
           <select name="funcao" onChange={handleChange}>
-            {funcoes.map((funcao) => {
+            {props.funcoes.map((funcao) => {
               return (
                 <option>{funcao}</option>
               )
@@ -79,7 +55,7 @@ const Form = () => {
         <div>
           <label htmlFor="time">Time</label>
           <select name="time" onChange={handleChange}>
-            {times.map((time) => {
+            {props.times.map((time) => {
               return (
                 <option>{time.name}</option>
               )
