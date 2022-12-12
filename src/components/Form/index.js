@@ -28,9 +28,28 @@ const Form = () => {
   const times = [
     {
       'name': 'New York Excelsior',
-      'color': '##002aff'
+      'color': '#002aff'
+    },
+    {
+      'name': 'Atlanta Reign',
+      'color': '#540000'
+    },
+    {
+      'name': 'Hangzhou Spark',
+      'color': '#ff73e8'
+    },
+    {
+      'name': 'Los Angeles Gladiators',
+      'color': '#36002d'
+    },
+    {
+      'name': 'Los Angeles Valiant',
+      'color': '#ffe600'
+    },
+    {
+      'name': 'Vancouver Titans',
+      'color': '#058f00'
     }
-
   ]
 
   const funcoes = ['Selecione uma função', 'Tanque', 'Dano', 'Suporte']
@@ -60,6 +79,11 @@ const Form = () => {
         <div>
           <label htmlFor="time">Time</label>
           <select name="time" onChange={handleChange}>
+            {times.map((time) => {
+              return (
+                <option>{time.name}</option>
+              )
+            })}
           </select>
         </div>
         <button className="submit-btn" type="submit">Criar card</button>

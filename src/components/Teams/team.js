@@ -1,13 +1,15 @@
 const Team = () => {
   return (
-    <section className="team">
-      <div>
-        <h3>Time 1</h3>
-        <div className="card">
+    <div className="card">
+      <div className="card-header">
+        <div className="card-img">
           <img src="https://github.com/JulioPampuch.png" />
         </div>
       </div>
-    </section>
+      <div className="card-footer">
+        <p className="hero-name">Cassidy</p>
+      </div>
+    </div>
   )
 }
 

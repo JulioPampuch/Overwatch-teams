@@ -4,11 +4,12 @@ import "./teams.css"
 const Teams = () => {
   return (
     <section className="teams">
-      <Team />
-      <Team />
-      <Team />
-      <Team />
-      <Team />
+      <h2 className="team-title" >Team name</h2>
+        <Team />
+        <Team />
+        <Team />
+        <Team />
+        <Team />
     </section>
 
   )
