@@ -47,7 +47,8 @@
 }
 
 .card div img {
-  width: 60%;
+  width: 140px;
+  height: 115px;
   border-radius: 50%;
 }
 

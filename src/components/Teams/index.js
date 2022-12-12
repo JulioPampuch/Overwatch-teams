@@ -9,7 +9,7 @@ const Teams = (props) => {
         <h2 className="team-title" style={{ color: props.primaryColor }}>{props.teamTitle}</h2>
         {props.heroes.map((hero) => {
           return (
-            <Hero key={hero.nome} heroName={hero.nome} heroFunction={hero.funcao} primaryColor={props.primaryColor} />
+            <Hero key={hero.nome} heroName={hero.nome} heroFunction={hero.funcao} image={hero.imagem} primaryColor={props.primaryColor} />
           )
         })}
       </section>
@@ -21,7 +21,7 @@ const Teams = (props) => {
             <p className="team-error">Atenção! Um time tem apenas 5 heróis</p>
             {props.heroes.map((hero) => {
               return (
-                <Hero key={hero.nome} heroName={hero.nome} heroFunction={hero.funcao} primaryColor={props.primaryColor} />
+                <Hero key={hero.nome} heroName={hero.nome} heroFunction={hero.funcao} image={hero.imagem} primaryColor={props.primaryColor} />
               )
             })}
           </section>
