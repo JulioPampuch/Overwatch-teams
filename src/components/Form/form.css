@@ -9,7 +9,7 @@
   align-items: center;
   
   background-color: #f7f7f7;
-  margin: 90px auto 0 auto;
+  margin: 90px auto 50px auto;
   border-radius: 20px;
 }
 
@@ -42,8 +42,8 @@
 }
 
 .submit-btn {
-  
   background-color: #f5a11b;
+  cursor: pointer;
 
   text-transform: uppercase;
   font-style: italic;
@@ -55,5 +55,6 @@
 }
 
 .submit-btn:hover {
-  background-color: #f7be63;
+  transform: scale(1.075);
+  transition: 0.1s;
 }

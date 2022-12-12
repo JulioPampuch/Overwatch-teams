@@ -11,6 +11,13 @@ const Form = (props) => {
       funcao: values.funcao,
       time: values.time
     })
+
+    setValues({
+      'nome': '',
+      'imagem': '',
+      'funcao': '',
+      'time': '',
+    })
   }
 
   const handleChange = (event) => {
@@ -33,19 +40,19 @@ const Form = (props) => {
 
   return (
     <section className="sectionForm">
-      <h3>Preencha os dados do seu herói.</h3>
+      <h3>Preencha os dados do seu herói</h3>
       <form onSubmit={onSubmit}>
         <div>
           <label htmlFor="nome">Nome</label>
-          <input type="text" name="nome" onChange={handleChange} value={values.nome} />
+          <input type="text" name="nome" onChange={handleChange} value={values.nome} required placeholder="Digite o nome do herói" />
         </div>
         <div>
           <label htmlFor="imagem">Imagem</label>
-          <input type="text" name="imagem" onChange={handleChange} value={values.imagem} />
+          <input type="text" name="imagem" onChange={handleChange} value={values.imagem} required placeholder="Digite o url da imagem do herói" />
         </div>
         <div>
           <label htmlFor="funcao">Função</label>
-          <select name="funcao" onChange={handleChange}>
+          <select name="funcao" required onChange={handleChange}>
             {props.funcoes.map((funcao) => {
               return (
                 <option key={funcao}>{funcao}</option>
@@ -55,7 +62,7 @@ const Form = (props) => {
         </div>
         <div>
           <label htmlFor="time">Time</label>
-          <select name="time" onChange={handleChange}>
+          <select name="time" required onChange={handleChange}>
             {props.times.map((time) => {
               return (
                 <option key={time.name}>{time.name}</option>
