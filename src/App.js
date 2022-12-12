@@ -1,8 +1,9 @@
+import { useState } from 'react';
 import './App.css';
 import Form from './components/Form';
 import Header from './components/Header';
 import Teams from './components/Teams';
-import Team from './components/Teams/team';
+import Team from './components/Teams/hero';
 
 function App() {
 
@@ -11,37 +12,49 @@ function App() {
   const times = [
     {
       'name': 'New York Excelsior',
-      'color': '#002aff'
+      'primaryColor': '#002aff',
+      'secundaryColor': '#b3b3ff'
     },
     {
       'name': 'Atlanta Reign',
-      'color': '#540000'
+      'primaryColor': '#540000',
+      'secundaryColor': '#ffb3b3'
     },
     {
       'name': 'Hangzhou Spark',
-      'color': '#ff73e8'
+      'primaryColor': '#ff73e8',
+      'secundaryColor': '#eed9ff'
     },
     {
       'name': 'Los Angeles Gladiators',
-      'color': '#36002d'
+      'primaryColor': '#36002d',
+      'secundaryColor': '#aaa2b0'
     },
     {
       'name': 'Los Angeles Valiant',
-      'color': '#ffe600'
+      'primaryColor': '#ffe600',
+      'secundaryColor': '#faf9c5'
     },
     {
       'name': 'Vancouver Titans',
-      'color': '#058f00'
+      'primaryColor': '#058f00',
+      'secundaryColor': '#d7fcd8'
     }
   ]
 
+  const getValues = (values) => {
+      setHeroes({...values, values})
+      console.log(values)
+  }
+
+  const [heroes, setHeroes] = useState([])
   return (
     <>
       <Header />
-      <Form times={times} funcoes={funcoes}/>
+      <Form times={times} funcoes={funcoes} submited={(hero) => setHeroes([...heroes, hero])} />
       {times.map((time) => {
         return (
-          <Teams title={time.name} color={time.color} />
+          <Teams teamTitle={time.name} primaryColor={time.primaryColor} secundaryColor={time.secundaryColor} heroes={heroes} />
         )
       })}
     </>

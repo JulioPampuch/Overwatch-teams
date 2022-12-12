@@ -7,9 +7,12 @@ const Form = (props) => {
 
   const onSubmit = (event) => {
     event.preventDefault()
-    // return (
-    //   <Teams color={value.color} />
-    // )
+    props.submited({
+      nome: values.nome,
+      imagem: values.imagem,
+      funcao: values.funcao,
+      time: values.time
+    })
   }
 
   const handleChange = (event) => {
