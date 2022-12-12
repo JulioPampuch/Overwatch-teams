@@ -52,7 +52,6 @@ function App() {
             teamTitle={time.name}
             primaryColor={time.primaryColor}
             secundaryColor={time.secundaryColor}
-            // heroes={heroes}
             heroes={heroes.filter((hero) => hero.time === time.name)} />
         )
       })}

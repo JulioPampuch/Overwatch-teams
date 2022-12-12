@@ -72,3 +72,12 @@
   font-size: 16px;
   margin-top: 0
 }
+
+.team-error {
+  width: 100%;
+
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  color: red;
+}
