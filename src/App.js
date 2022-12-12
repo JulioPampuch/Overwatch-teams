@@ -48,7 +48,12 @@ function App() {
       <Form times={times} funcoes={funcoes} submited={(hero) => setHeroes([...heroes, hero])} />
       {times.map((time) => {
         return (
-          <Teams key={time.name} teamTitle={time.name} primaryColor={time.primaryColor} secundaryColor={time.secundaryColor} heroes={heroes} />
+          <Teams key={time.name}
+            teamTitle={time.name}
+            primaryColor={time.primaryColor}
+            secundaryColor={time.secundaryColor}
+            // heroes={heroes}
+            heroes={heroes.filter((hero) => hero.time === time.name)} />
         )
       })}
     </>
