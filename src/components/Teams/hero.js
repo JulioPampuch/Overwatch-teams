@@ -3,7 +3,7 @@ const Hero = (props) => {
     <div className="card">
       <div className="card-header" style={{ backgroundColor: props.primaryColor }}>
         <div className="card-img">
-          <img src="https://github.com/JulioPampuch.png" />
+          <img src="https://github.com/JulioPampuch.png" alt="Hero" />
         </div>
       </div>
       <div className="card-footer">

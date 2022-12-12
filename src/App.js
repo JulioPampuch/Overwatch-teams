@@ -3,7 +3,6 @@ import './App.css';
 import Form from './components/Form';
 import Header from './components/Header';
 import Teams from './components/Teams';
-import Team from './components/Teams/hero';
 
 function App() {
 
@@ -42,11 +41,6 @@ function App() {
     }
   ]
 
-  const getValues = (values) => {
-      setHeroes({...values, values})
-      console.log(values)
-  }
-
   const [heroes, setHeroes] = useState([])
   return (
     <>
@@ -54,7 +48,7 @@ function App() {
       <Form times={times} funcoes={funcoes} submited={(hero) => setHeroes([...heroes, hero])} />
       {times.map((time) => {
         return (
-          <Teams teamTitle={time.name} primaryColor={time.primaryColor} secundaryColor={time.secundaryColor} heroes={heroes} />
+          <Teams key={time.name} teamTitle={time.name} primaryColor={time.primaryColor} secundaryColor={time.secundaryColor} heroes={heroes} />
         )
       })}
     </>

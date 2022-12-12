@@ -1,7 +1,5 @@
 import "./form.css"
 import { useState } from "react"
-import Teams from "../Teams"
-
 
 const Form = (props) => {
 
@@ -50,7 +48,7 @@ const Form = (props) => {
           <select name="funcao" onChange={handleChange}>
             {props.funcoes.map((funcao) => {
               return (
-                <option>{funcao}</option>
+                <option key={funcao}>{funcao}</option>
               )
             })}
           </select>
@@ -60,7 +58,7 @@ const Form = (props) => {
           <select name="time" onChange={handleChange}>
             {props.times.map((time) => {
               return (
-                <option>{time.name}</option>
+                <option key={time.name}>{time.name}</option>
               )
             })}
           </select>

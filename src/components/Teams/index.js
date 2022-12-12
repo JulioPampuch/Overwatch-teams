@@ -10,7 +10,7 @@ const Teams = (props) => {
       <h2 className="team-title" style={{ color: props.primaryColor }}>{props.teamTitle}</h2>
       {props.heroes.map((hero) => {
         return (
-          <Hero heroName={hero.nome} heroFunction={hero.funcao} primaryColor={props.primaryColor}/>
+          <Hero key={hero.nome} heroName={hero.nome} heroFunction={hero.funcao} primaryColor={props.primaryColor}/>
         )
       })}
     </section>
