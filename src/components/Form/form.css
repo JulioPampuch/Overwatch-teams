@@ -1,6 +1,4 @@
 .sectionForm {
-  width: 60%;
-
   text-transform: uppercase;
   font-style: italic;
   
@@ -9,13 +7,13 @@
   align-items: center;
   
   background-color: #f7f7f7;
-  margin: 90px auto 50px auto;
+  margin: 30px auto;
   border-radius: 20px;
 }
 
 .sectionForm h3 {
-
-  color: #212121;
+  font-size: 22px;
+  margin: 20px 50px;
 }
 
 .sectionForm form {
@@ -30,7 +28,6 @@
 }
 
 .sectionForm form div label {
-
   margin-bottom: 10px;
 }
 

@@ -40,38 +40,40 @@ const Form = (props) => {
 
   return (
     <section className="sectionForm">
-      <h3>Preencha os dados do seu herói</h3>
-      <form onSubmit={onSubmit}>
-        <div>
-          <label htmlFor="nome">Nome</label>
-          <input type="text" name="nome" onChange={handleChange} value={values.nome} required placeholder="Digite o nome do herói" />
-        </div>
-        <div>
-          <label htmlFor="imagem">Imagem</label>
-          <input type="text" name="imagem" onChange={handleChange} value={values.imagem} required placeholder="Digite o url da imagem do herói" />
-        </div>
-        <div>
-          <label htmlFor="funcao">Função</label>
-          <select name="funcao" required onChange={handleChange}>
-            {props.funcoes.map((funcao) => {
-              return (
-                <option key={funcao}>{funcao}</option>
-              )
-            })}
-          </select>
-        </div>
-        <div>
-          <label htmlFor="time">Time</label>
-          <select name="time" required onChange={handleChange}>
-            {props.times.map((time) => {
-              return (
-                <option key={time.name}>{time.name}</option>
-              )
-            })}
-          </select>
-        </div>
-        <button className="submit-btn" type="submit">Criar card</button>
-      </form>
+      <div className="container">
+        <h3>Preencha os dados do seu herói</h3>
+        <form onSubmit={onSubmit}>
+          <div>
+            <label htmlFor="nome">Nome</label>
+            <input type="text" name="nome" onChange={handleChange} value={values.nome} required placeholder="Digite o nome do herói" />
+          </div>
+          <div>
+            <label htmlFor="imagem">Imagem</label>
+            <input type="text" name="imagem" onChange={handleChange} value={values.imagem} required placeholder="Digite o url da imagem do herói" />
+          </div>
+          <div>
+            <label htmlFor="funcao">Função</label>
+            <select name="funcao" required onChange={handleChange}>
+              {props.funcoes.map((funcao) => {
+                return (
+                  <option key={funcao}>{funcao}</option>
+                )
+              })}
+            </select>
+          </div>
+          <div>
+            <label htmlFor="time">Time</label>
+            <select name="time" required onChange={handleChange}>
+              {props.times.map((time) => {
+                return (
+                  <option key={time.name}>{time.name}</option>
+                )
+              })}
+            </select>
+          </div>
+          <button className="submit-btn" type="submit">Criar card</button>
+        </form>
+      </div>
     </section>
   )
 }

@@ -1,5 +1,26 @@
 footer {
   height: 170px;
 
-  background-color: #f7f7f7;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  
+  background: #f7f7f7;
+}
+
+footer p {
+  font-size: 14px;
+}
+
+footer img {
+  width: 80px;
+}
+
+footer div {
+}
+
+footer .contato {
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }

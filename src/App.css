@@ -2,10 +2,17 @@
   font-family: 'Inter', sans-serif
 }
 
+body {
+  background-color: #fcfcfc;
+}
+
 .App {
   text-align: center;
+}
 
-
+.container {
+  width: 60%;
+  margin: 0 auto;
 }
 
 .App-logo {
