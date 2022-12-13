@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import './App.css';
+import Footer from './components/Footer';
 import Form from './components/Form';
 import Header from './components/Header';
 import Teams from './components/Teams';
@@ -55,6 +56,7 @@ function App() {
             heroes={heroes.filter((hero) => hero.time === time.name)} />
         )
       })}
+    <Footer />
     </>
   );
 }

@@ -7,6 +7,7 @@ const Teams = (props) => {
     props.heroes.length >= 1 && props.heroes.length < 6 ?
       <section className="teams" style={{ backgroundColor: props.secundaryColor }}>
         <h2 className="team-title" style={{ color: props.primaryColor }}>{props.teamTitle}</h2>
+        <div className="team-border" style={{ borderColor: props.primaryColor }}></div>
         {props.heroes.map((hero) => {
           return (
             <Hero key={hero.nome} heroName={hero.nome} heroFunction={hero.funcao} image={hero.imagem} primaryColor={props.primaryColor} />
