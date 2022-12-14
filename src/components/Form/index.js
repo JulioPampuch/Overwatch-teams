@@ -5,6 +5,7 @@ const Form = (props) => {
 
   const onSubmit = (event) => {
     event.preventDefault()
+    event.target.reset()
     props.submited({
       nome: values.nome,
       imagem: values.imagem,
@@ -16,7 +17,7 @@ const Form = (props) => {
       'nome': '',
       'imagem': '',
       'funcao': '',
-      'time': '',
+      'time': ''
     })
   }
 
@@ -54,9 +55,9 @@ const Form = (props) => {
           <div>
             <label htmlFor="funcao">Função</label>
             <select name="funcao" required onChange={handleChange}>
-              {props.funcoes.map((funcao) => {
+              {props.funcoes.map((funcao, index) => {
                 return (
-                  <option key={funcao}>{funcao}</option>
+                  <option key={index}>{funcao}</option>
                 )
               })}
             </select>

@@ -7,7 +7,6 @@ const Footer = () => {
       <img className="overwatch-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Blizzard_Entertainment_Logo_2015.svg/1200px-Blizzard_Entertainment_Logo_2015.svg.png" />
       <p>Desenvolvido por Julio Pampuch</p>
       <div>
-        <p>Contato:</p>
         <div className="contato">
           <Envelope size={22} />
           <p>juliopampuch@gmail.com</p>
