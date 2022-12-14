@@ -52,9 +52,11 @@
   justify-content: center;
 }
 
-.card div img {
-  width: 140px;
-  height: 115px;
+.bg-img {
+  width: 130px;
+  height: 130px;
+  background-size: cover;
+  background-position: center;
   border-radius: 50%;
 }
 
@@ -76,13 +78,14 @@
 }
 
 .hero-name {
-  font-size: 22px;
-  margin-bottom: 5px
+  font-size: 26px;
+  margin-bottom: 5px;
+  padding-top: 20px;
 }
 
 .hero-function {
   font-size: 16px;
-  margin-top: 0
+  margin-top: 0;
 }
 
 .team-error {

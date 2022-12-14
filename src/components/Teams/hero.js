@@ -3,7 +3,8 @@ const Hero = (props) => {
     <div className="card">
       <div className="card-header" style={{ backgroundColor: props.primaryColor }}>
         <div className="card-img">
-          <img src={props.image} alt="Hero" />
+          <div className="bg-img" style={{ backgroundImage: `url(${props.image})` }}></div>
+          {/* <img src={props.image} alt="Hero" /> */}
         </div>
       </div>
       <div className="card-footer">
