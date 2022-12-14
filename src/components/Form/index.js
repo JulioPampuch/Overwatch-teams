@@ -65,6 +65,7 @@ const Form = (props) => {
           <div>
             <label htmlFor="time">Time</label>
             <select name="time" required onChange={handleChange}>
+              <option>Selecione seu time</option>
               {props.times.map((time) => {
                 return (
                   <option key={time.name}>{time.name}</option>
