@@ -72,7 +72,7 @@ const Form = (props) => {
               })}
             </select>
           </div>
-          <button className="submit-btn" type="submit">Criar card</button>
+          <button className="submit-btn" type="submit">Criar herói</button>
         </form>
       </div>
     </section>
